@@ -4,7 +4,7 @@ const test = () => {
   console.log(`You invoked a@${getVersion().a}`);
 };
 
-const testAlert = () => alert('a3');
+const testAlert = () => alert('a1');
 
 export default test;
 

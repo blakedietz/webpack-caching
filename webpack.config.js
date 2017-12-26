@@ -7,7 +7,7 @@ module.exports = {
     b: ['./src/b'],
   },
   output: {
-    path: './build',
+    path: './dev-server/build',
     filename: '[name]/[name].min.js',
     libraryTarget: 'umd',
     library: '[name]'

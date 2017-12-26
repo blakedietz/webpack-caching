@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV='production' webpack"
+    "build": "NODE_ENV='production' webpack",
+    "dev-server": "node ./dev-server/index.js",
+    "repro-steps": "sed -i 's/a1/a2/g' ./src/a/test.js"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +26,10 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "express": "^4.16.2",
+    "express-winston": "^2.4.0",
+    "winston": "^2.4.0"
   }
 }
