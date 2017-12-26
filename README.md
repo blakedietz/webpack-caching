@@ -73,5 +73,18 @@ the following command.
 common.loadScript('./build/a/a.min.js');
 ```
 
-This will load the new version of the script. Basic browser cache
-busting is done with the current time in UTC added as a query string.
+This will load the new version of the script. You should be able to see
+this in the network tab of the dev tools. Basic browser cache busting is
+done with the current time in UTC added as a query string. You can
+check the implementation if you'd like in `./src/common/index.js`.
+
+Now once the new script has been loaded into the browser check to see
+if the new reference is being used by Webpack.
+
+```
+a.testAlert();
+```
+
+You should still see `a1` even though you've loaded the new source that
+contains `a2`. So it has not been updated.
+
