@@ -60,3 +60,4 @@ typings/
 .env
 
 dev-server/build
+build

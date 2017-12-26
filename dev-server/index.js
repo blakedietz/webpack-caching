@@ -21,4 +21,4 @@ app.use('/', express.static(path.join(__dirname, './')));
 app.use('/build', express.static(path.join(__dirname, 'build')));
 app.set('port', 8080);
 
-const server = app.listen(app.get('port'), () => { });
+app.listen(app.get('port'), () => { });
