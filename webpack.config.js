@@ -2,9 +2,9 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    common: ['./src/common'],
-    a: ['./src/a'],
-    b: ['./src/b'],
+    common: [require.resolve('./src/cache-bust.js'),'./src/common'],
+    a: [require.resolve('./src/cache-bust.js'), './src/a'],
+    b: [require.resolve('./src/cache-bust.js'), './src/b'],
   },
   output: {
     path: './dev-server/build',
