@@ -29,7 +29,7 @@ compiled javascript assets.
 
 Here you can see that internally Webpack has a cache is implemented as a
 map keyed by module id to the compiled module implementation. This is
-known internally as `installedChunks`.
+known internally as `installedModules`.
 
 With the above snippet of code, it is possible that a module of name
 `foo` if already loaded, would not override the pre-existing module
